@@ -764,11 +764,13 @@ input::placeholder {
     position: absolute;
     top: 30px;
     left: 12px;
-    
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .form-modal-label {
      display: block;
+     margin-bottom: 4px;
 
  }
 
@@ -778,6 +780,7 @@ input::placeholder {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
  }
 .checkbox {
     
@@ -839,4 +842,15 @@ input::placeholder {
     resize: none;
     height: 120px;
     padding: 12px 16px;
+}
+.form-group:focus-within .form-input-mod {
+    border: 1px solid var(--accent-color);
+}
+.form-group:focus-within .form-icon {
+    fill: var(--accent-color);
+}
+
+
+::placeholder{
+    color: rgba(117, 117, 117, 0.5);
 }
