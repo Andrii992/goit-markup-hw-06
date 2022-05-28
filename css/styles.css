@@ -803,6 +803,9 @@ input::placeholder {
  .checkbox:checked + .custom-checkbox .custom-checkbox-icon{
     background-color: #2196F3;
 }
+.checkbox:focus + .custom-checkbox{
+    outline: 2px solid var(--accent-color);
+}
 .form-policy-group {
     display: flex;
     align-items: center;
