@@ -21,33 +21,42 @@
   <body class="body">
     <header class="head">
       <div class="container-head">
-        <a class="web-studio" href="./index.html"> <span class="web">Web</span>Studio </a>
+        <a class="container-head__link" href="./index.html">
+          <span class="container-head__web">Web</span>Studio
+        </a>
         <nav>
-          <ul class="list list-navigation">
-            <li class="navigation-style">
-              <a class="navigation studio inline" href="./index.html">Студия</a>
+          <ul class="list-navigation list-navigation--style-none">
+            <li class="list-navigation__item">
+              <a
+                class="list-navigation__link list-navigation__link--element list-navigation__link--inline"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="navigation-style">
-              <a class="navigation" href="./portfolio.html">Портфолио</a>
+            <li class="list-navigation__item">
+              <a class="list-navigation__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navigation-style">
-              <a class="navigation" href="#">Контакты</a>
+            <li class="list-navigation__item">
+              <a class="list-navigation__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="list contact">
-          <li class="list-contact">
-            <a class="navigation head-nav" href="mailto:info@devstudio.com">
-              <svg class="header-ikon" width="16px" height="12px">
+        <ul class="list-contact">
+          <li class="list-contact__item">
+            <a
+              class="list-contact__link list-contact__link--color"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="list-contact--ikon" width="16px" height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="navigation head-nav" href="tel:+380961111111">
-              <svg class="header-ikon" width="10px" height="16px">
+            <a class="list-contact__link list-contact__link--color" href="tel:+380961111111">
+              <svg class="list-contact--ikon" width="10px" height="16px">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -432,7 +441,9 @@
     <footer class="footer">
       <div class="container container-footer">
         <div class="">
-          <a class="web-studio-footer" href="./index.html"> <span class="web">Web</span>Studio </a>
+          <a class="web-studio-footer" href="./index.html">
+            <span class="container-head__web">Web</span>Studio
+          </a>
           <address class="address">
             <p class="text text-footer">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="list">
